@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" styleClass="root1" stylesheets="@spaceWalkStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sWProjektFX.MenuController">
+   <children>
+      <ButtonBar fx:id="playerCho" layoutX="30.0" layoutY="376.0" prefHeight="235.0" prefWidth="1307.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#plG2" pickOnBounds="false" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: #ff009d;" text="2 players" textFill="#7b1552">
+               <font>
+                  <Font name="SansSerif Regular" size="58.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#plG3" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: #ff009d;" text="3 players" textFill="#7b1552">
+               <font>
+                  <Font name="SansSerif Regular" size="58.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#plG4" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: #ff009d;" text="4 players" textFill="#7b1552">
+               <font>
+                  <Font name="SansSerif Regular" size="58.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#plG5" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: #ff009d;" text="5 players" textFill="#7b1552">
+               <font>
+                  <Font name="SansSerif Regular" size="58.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="welcomeLabel1" alignment="CENTER" layoutX="50.0" layoutY="10.0" prefHeight="190.0" prefWidth="1291.0" text="Welcome to space walk!" textFill="#c141a1">
+         <font>
+            <Font name="SansSerif Bold" size="110.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeLabel2" alignment="CENTER" layoutX="136.0" layoutY="181.0" prefHeight="155.0" prefWidth="1110.0" text="How many players will play?" textFill="#c141a1">
+         <font>
+            <Font name="SansSerif Bold" size="60.0" />
+         </font>
+      </Label>
+      <ButtonBar fx:id="colorCho" layoutX="30.0" layoutY="376.0" prefHeight="235.0" prefWidth="1307.0" visible="false">
+         <buttons>
+            <Button fx:id="colorRedButton" mnemonicParsing="false" onAction="#colorRedCho" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: red;" text="RED" textFill="#860000">
+               <font>
+                  <Font name="SansSerif Regular" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="colorBlueButton" mnemonicParsing="false" onAction="#colorBlueCho" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: blue;" text="BLUE" textFill="#0c0076">
+               <font>
+                  <Font name="SansSerif Regular" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="colorGreenButton" mnemonicParsing="false" onAction="#colorGreenCho" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: #1eff00;" text="GREEN" textFill="#006e0d">
+               <font>
+                  <Font name="SansSerif Regular" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="colorGrayButton" mnemonicParsing="false" onAction="#colorGrayCho" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: #6e6e6e;" text="GRAY" textFill="#3b3b3b">
+               <font>
+                  <Font name="SansSerif Regular" size="50.0" />
+               </font>
+            </Button>
+            <Button fx:id="colorWhiteButton" mnemonicParsing="false" onAction="#colorWhiteCho" prefHeight="241.0" prefWidth="334.0" style="-fx-background-color: white;" text="WHITE" textFill="#5e5e5e">
+               <font>
+                  <Font name="SansSerif Regular" size="50.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+      <Button fx:id="playButton" layoutX="204.0" layoutY="376.0" mnemonicParsing="false" onAction="#switchToGameScene" prefHeight="236.0" prefWidth="974.0" style="-fx-background-color: #ff009d;" stylesheets="@spaceWalkStyle.css" text="PLAY" textFill="#7b1552" visible="false">
+         <font>
+            <Font name="SansSerif Regular" size="120.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="1240.0" layoutY="630.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #ff009d;" stylesheets="@spaceWalkStyle.css" text="BACK" textFill="#7b1552" visible="false">
+         <font>
+            <Font name="SansSerif Regular" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="rulesButton" layoutX="15.0" layoutY="630.0" mnemonicParsing="false" onAction="#rulesShow" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #ff009d;" stylesheets="@spaceWalkStyle.css" text="RULES" textFill="#7b1552">
+         <font>
+            <Font name="SansSerif Regular" size="25.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="rules" prefHeight="700.0" prefWidth="1400.0" stylesheets="@spaceWalkStyle.css" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="5.0" prefHeight="106.0" prefWidth="1291.0" text="Rules" textFill="#c141a1">
+               <font>
+                  <Font name="SansSerif Bold" size="70.0" />
+               </font>
+            </Label>
+            <Button fx:id="rulesBack" layoutX="1240.0" layoutY="630.0" mnemonicParsing="false" onAction="#rulesHide" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #ff009d;" stylesheets="@spaceWalkStyle.css" text="BACK" textFill="#7b1552">
+               <font>
+                  <Font name="SansSerif Regular" size="25.0" />
+               </font>
+            </Button>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="127.0" prefHeight="46.0" prefWidth="1291.0" text="- Every player must have 3 rockets, 1 of every type, when the game starts." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="170.0" prefHeight="46.0" prefWidth="1291.0" text="- Players gradually one by one place one rocket arbitrarily on the planets on the game board." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="210.0" prefHeight="46.0" prefWidth="1291.0" text="- In placing phase cannot be on one planet two or more rockets of one type." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="290.0" prefHeight="46.0" prefWidth="1291.0" text="- On one planet can be max 4 rockets" textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="330.0" prefHeight="46.0" prefWidth="1291.0" text="- If there is more than one rocket on the planet, the order of moving rockets depends on their size." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="370.0" prefHeight="46.0" prefWidth="1291.0" text=" -&gt; First it stretches large, then medium, and finally The small ones will come into play." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="410.0" prefHeight="46.0" prefWidth="1291.0" text="- If there are rockets of same size, the order choose player." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="490.0" prefHeight="46.0" prefWidth="1291.0" text="- In orbit, proceeds clockwise. Black hole is the end for every rocket." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="450.0" prefHeight="46.0" prefWidth="1291.0" text=" -&gt; The first rocket moves by 1 planet, the second by 2, the third by 3 etc." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="530.0" prefHeight="46.0" prefWidth="1291.0" text="- On planet where is single rocket, the rocket moves - regardless of size – by only 1." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="640.0" prefHeight="46.0" prefWidth="1176.0" text="- The game ends, when one of the players has no more rockets." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="570.0" prefHeight="46.0" prefWidth="1291.0" text="- Each player has 3 tokens at the beginning of the game, using them to gain a turn." textFill="#ff009d">
+               <font>
+                  <Font name="SansSerif Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

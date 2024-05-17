@@ -1,0 +1,109 @@
+.root {
+    -fx-background-image: url(pics/SpaceWalkBg.png);
+}
+#rocketsOnPlanetAnchorPane, #rocketsOnPlanetAnchorPane2, #rules, #endingScreen{
+    -fx-background-image: url(pics/SpaceWalkBg.png);
+}
+#blackHole1, #blackHole2, #blackHole3{
+    -fx-background-image: url(pics/blackHole.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+
+#planet1{
+    -fx-background-image: url(pics/planet1.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet2{
+    -fx-background-image: url(pics/planet2.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet3{
+    -fx-background-image: url(pics/planet3.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet4{
+    -fx-background-image: url(pics/planet4.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet5{
+    -fx-background-image: url(pics/planet5.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet6{
+    -fx-background-image: url(pics/planet6.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet7{
+    -fx-background-image: url(pics/planet7.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet8{
+    -fx-background-image: url(pics/planet8.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet9{
+    -fx-background-image: url(pics/planet9.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet10{
+    -fx-background-image: url(pics/planet10.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet11{
+    -fx-background-image: url(pics/planet11.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet12{
+    -fx-background-image: url(pics/planet12.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet13{
+    -fx-background-image: url(pics/planet13.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet14{
+    -fx-background-image: url(pics/planet14.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet15{
+    -fx-background-image: url(pics/planet15.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet16{
+    -fx-background-image: url(pics/planet16.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet17{
+    -fx-background-image: url(pics/planet17.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#planet18{
+    -fx-background-image: url(pics/planet18.png);
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
+#rocketPlaceButton, #rocketMoveButton, #rocketShowButton, #rocketShowButton2, #rocketMoveButton, #bigButton, #mediumButton, #smallButton,
+#rocketMoveButton1, #rocketMoveButton2, #rocketMoveButton3, #rocketMoveButton4, #rocketMoveButton5,#rocketMoveButton6,#rocketMoveButton7,
+#rocketMoveButton8, #rocketMoveButton9, #rocketMoveButton10, #rocketMoveButton11, #rocketMoveButton12, #rocketMoveButton13, #rocketMoveButton14,
+#rocketMoveButton15{
+    -fx-background-color: none;
+    -fx-border-color: none;
+}
